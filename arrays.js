@@ -38,13 +38,15 @@ console.log(middleNums)
 */
 
 // CODE HERE
-function bigOrSmall(answer) {
-    for (let i = 0; i > 100; i++) {
-        console.log("big")
-        for ( let i = 0; i <= 100; i++) {
-            console.log("small")
-        }
-        answer(arr[i])
+function bigOrSmall(arr) {
+  const answers = []
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 100) {
+        answers.push("big")
+      } else {
+        answers.push("small")
+      }
     }
-    console.log(answer)
-}
+    return answers
+  }
+  console.log(bigOrSmall([1,500,50,62,800,120]))
