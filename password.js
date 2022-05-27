@@ -12,10 +12,11 @@ const reader = readline.createInterface({
     output: process.stdout
   })
 reader.question("Welcome to the password validator, Please enter your password?", function(input){
+    console.log("The input was"  + input)
     tokens = input.split(' ');
 password = tokens[0];
     if (input.length < 10) {
-        console.log("Your password is invalid")
+        console.log("Your password is invalid, at least ten characters long")
     } else if (input.length > 12) {
         console.log("Your password should not have more than twelve characters")
     }

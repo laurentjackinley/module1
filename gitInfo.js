@@ -90,7 +90,7 @@ let add = [
 let commit = [
     {
         descripton: "commit your staged content as a new commit snapshot",
-        code: "git commit -m"
+        code: 'git commit -m "your message"'
     }
 ]
 
